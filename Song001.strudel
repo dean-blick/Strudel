@@ -1,0 +1,25 @@
+
+$: arrange(
+  [16, "-"],
+  [16, sound("<[bd - - bd bd - bd - - - bd - bd - - - ]>/2").bank("RhythmAce")],
+)
+
+// $: note("48 52 55 59").sound("piano")
+// $: note("52 55 59 64").sound("piano")
+
+$: arrange(
+  [8, "-"],
+  [4, note("48 52 55 59").sound("piano")],
+  [4, note("52 55 59 64").sound("piano")],
+  [4, note("48 52 55 59").sound("piano")],
+  [4, note("52 55 59 64").sound("piano")],
+  [4, note("48 52 55 59").sound("piano")],
+  [4, note("52 55 59 64").sound("piano")]
+)
+
+$: arrange(
+  [4, chord("C").sound("sawtooth").voicing().lpf(2000).gain(.2)],
+  [4, chord("A").sound("sawtooth").voicing().lpf(2000).gain(.2)]
+)
+
+// $: chord("C").sound("sawtooth").voicing().lpf(2000).gain(.2)._scope()
