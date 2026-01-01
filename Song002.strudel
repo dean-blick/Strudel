@@ -1,0 +1,12 @@
+setcpm(35)
+
+$: s("bd bd -     [bd -] [bd -] bd - [bd -]").lpf(800).gain(.6)
+$: n("-   - 2 [- 2] [- 9] - 2 [- 9]").s("hh").bank("RolandTR909")
+
+
+
+$: s("bd bd bd bd").bank("RolandTR909").gain(1)
+$: n("4   4 4 [4 4] [3 -] - 3 [5 3]").s("hh").bank("RolandTR909").gain(.4)
+
+
+// $: note("[63, 66, 68]").sound("piano")._pitchwheel()
